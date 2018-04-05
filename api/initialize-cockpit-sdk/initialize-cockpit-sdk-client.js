@@ -1,11 +1,8 @@
 import CockpitSDK from "cockpit-sdk";
+import OPTIONS from "./cockpit-options";
 
 export default function initializeCockpitSDK() {
-  debugger;
-  const cockpit = new CockpitSDK({
-    host: process.env.COCKPIT_HOST,
-    accessToken: process.env.COCKPIT_ACCESS_TOKEN
-  });
+  const cockpit = new CockpitSDK(OPTIONS);
 
   return cockpit;
 }
