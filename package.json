@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
+    "dev:debug": "next --inspect --debug-brk",
     "build": "next build",
     "start": "next start"
   },
@@ -20,10 +21,10 @@
   },
   "homepage": "https://github.com/lucalanca/nextjs-experiments#readme",
   "dependencies": {
-    "cockpit-sdk": "0.9.2",
+    "cockpit-sdk": "^0.9.4",
     "next": "^5.1.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
   },
   "devDependencies": {
     "babel-plugin-inline-dotenv": "^1.1.2",
